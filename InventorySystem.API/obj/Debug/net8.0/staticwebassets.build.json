@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aI47HCWStlnrA9YO3ZRUWNiqENrPQEnvdYJjWfrTr8M=",
+  "Source": "InventorySystem.API",
+  "BasePath": "_content/InventorySystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
