@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\InventorySystem.Application",
+    "\\InventorySystem.Application\\DTOs",
+    "\\InventorySystem.Application\\DTOs\\SaleSimulation",
+    "\\InventorySystem.Application\\Interfaces",
+    "\\InventorySystem.Application\\Services",
+    "\\InventorySystem.Domain",
+    "\\InventorySystem.Domain\\Entities",
+    "\\InventorySystem.Infrastructure",
+    "\\InventorySystem.Infrastructure\\Migrations",
+    "\\InventorySystem.Infrastructure\\Persistance"
+  ],
+  "SelectedNode": "\\InventorySystem.Application\\Services\\SaleSimulationService.cs",
+  "PreviewInSolutionExplorer": false
+}

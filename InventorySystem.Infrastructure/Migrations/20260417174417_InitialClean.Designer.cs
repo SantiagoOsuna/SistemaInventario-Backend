@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InventorySystem.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260324175158_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260417174417_InitialClean")]
+    partial class InitialClean
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,7 @@ namespace InventorySystem.Infrastructure.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("IVA")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("INTEGER");
@@ -47,7 +47,7 @@ namespace InventorySystem.Infrastructure.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.Property<int>("Stock")
                         .HasColumnType("INTEGER");
@@ -70,16 +70,16 @@ namespace InventorySystem.Infrastructure.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Discount")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.Property<decimal>("IVA")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.Property<decimal>("Subtotal")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.Property<decimal>("Total")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 
@@ -93,7 +93,7 @@ namespace InventorySystem.Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("INTEGER");
@@ -105,7 +105,7 @@ namespace InventorySystem.Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Subtotal")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 
@@ -116,6 +116,29 @@ namespace InventorySystem.Infrastructure.Migrations
                     b.ToTable("SaleSimulationDetails");
                 });
 
+            modelBuilder.Entity("InventorySystem.Domain.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("InventorySystem.Domain.Entities.SaleSimulationDetail", b =>
                 {
                     b.HasOne("InventorySystem.Domain.Entities.Product", "Product")
@@ -124,13 +147,15 @@ namespace InventorySystem.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("InventorySystem.Domain.Entities.SaleSimulation", null)
+                    b.HasOne("InventorySystem.Domain.Entities.SaleSimulation", "SaleSimulation")
                         .WithMany("Details")
                         .HasForeignKey("SaleSimulationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Product");
+
+                    b.Navigation("SaleSimulation");
                 });
 
             modelBuilder.Entity("InventorySystem.Domain.Entities.SaleSimulation", b =>

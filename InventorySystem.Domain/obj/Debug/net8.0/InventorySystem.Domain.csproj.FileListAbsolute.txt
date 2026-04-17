@@ -1,10 +1,11 @@
+C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\bin\Debug\net8.0\InventorySystem.Domain.deps.json
+C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\bin\Debug\net8.0\InventorySystem.Domain.dll
+C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\bin\Debug\net8.0\InventorySystem.Domain.pdb
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\obj\Debug\net8.0\InventorySystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\obj\Debug\net8.0\InventorySystem.Domain.AssemblyInfoInputs.cache
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\obj\Debug\net8.0\InventorySystem.Domain.AssemblyInfo.cs
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\obj\Debug\net8.0\InventorySystem.Domain.csproj.CoreCompileInputs.cache
-C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\bin\Debug\net8.0\InventorySystem.Domain.deps.json
-C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\bin\Debug\net8.0\InventorySystem.Domain.dll
-C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\bin\Debug\net8.0\InventorySystem.Domain.pdb
+C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\obj\Debug\net8.0\InventorySystem.Domain.sourcelink.json
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\obj\Debug\net8.0\InventorySystem.Domain.dll
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\obj\Debug\net8.0\refint\InventorySystem.Domain.dll
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Domain\obj\Debug\net8.0\InventorySystem.Domain.pdb
