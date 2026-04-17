@@ -11,6 +11,7 @@ C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.In
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Infrastructure\obj\Debug\net8.0\InventorySystem.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Infrastructure\obj\Debug\net8.0\InventorySystem.Infrastructure.AssemblyInfo.cs
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Infrastructure\obj\Debug\net8.0\InventorySystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Infrastructure\obj\Debug\net8.0\InventorySystem.Infrastructure.sourcelink.json
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Infrastructure\obj\Debug\net8.0\Inventor.396E51AD.Up2Date
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Infrastructure\obj\Debug\net8.0\InventorySystem.Infrastructure.dll
 C:\Users\santi\OneDrive\Escritorio\sistema-inventario\backend\InventorySystem.Infrastructure\obj\Debug\net8.0\refint\InventorySystem.Infrastructure.dll
