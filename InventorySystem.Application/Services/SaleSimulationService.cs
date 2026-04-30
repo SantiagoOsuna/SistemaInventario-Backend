@@ -76,10 +76,9 @@ public class SaleSimulationService : ISaleSimulationService
             totalIVA += ivaAmount;
             discountTotal += discountAmount;
             totalGeneral += totalItem;
-
             totalGeneral = Math.Round(totalGeneral, 2);
 
-            // 🔥 Guardar en BD
+            // Guardar en BD
             details.Add(new SaleSimulationDetail
             {
                 ProductId = item.ProductId,
@@ -88,7 +87,7 @@ public class SaleSimulationService : ISaleSimulationService
                 Subtotal = subtotal
             });
 
-            // 🔥 Response
+            // Response
             responseDetails.Add(new SaleSimulationDetailDto
             {
                 ProductId = item.ProductId,

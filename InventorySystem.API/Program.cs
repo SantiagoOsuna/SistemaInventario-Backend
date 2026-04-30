@@ -81,7 +81,20 @@ builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ISaleSimulationRepository, SaleSimulationRepository>();
 builder.Services.AddScoped<ISaleSimulationService, SaleSimulationService>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+
 var app = builder.Build();
+
+app.UseCors("AllowFrontend");
 
 // Mapeo endpoints
 app.MapGet("/products", async (IProductService service) =>
@@ -120,6 +133,10 @@ app.MapPost("/salesimulation", async (CreateSaleSimulationDto dto, ISaleSimulati
     return Results.Ok(result);
 });
 
+app.MapGet("/salesimulation", async (ISaleSimulationService service) =>
+{
+    return await service.GetAllAsync();
+});
 //Authentication endpoints
 app.MapPost("/auth/register", async (RegisterDto dto, IAuthService service) =>
 {
@@ -146,5 +163,5 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.Run();

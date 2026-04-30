@@ -22,6 +22,7 @@ public class ProductService : IProductService
             Id = p.Id,
             Code = p.Code,
             Name = p.Name,
+            Description = p.Description,
             Price = p.Price,
             Stock = p.Stock,
             IVA = p.IVA
@@ -39,6 +40,7 @@ public class ProductService : IProductService
             Id = product.Id,
             Code = product.Code,
             Name = product.Name,
+            Description = product.Description,
             Price = product.Price,
             Stock = product.Stock,
             IVA = product.IVA
