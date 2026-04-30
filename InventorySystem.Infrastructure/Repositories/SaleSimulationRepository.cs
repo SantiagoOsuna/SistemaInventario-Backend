@@ -14,7 +14,7 @@ public class SaleSimulationRepository : ISaleSimulationRepository
 
     public async Task<List<SaleSimulation>> GetAllAsync()
     {
-        return await _context.SaleSimulations.ToListAsync();
+        return await _context.SaleSimulations.Include(s => s.Details).ToListAsync();
     }
 
     public async Task<SaleSimulation?> CreateAsync(SaleSimulation simulation)
