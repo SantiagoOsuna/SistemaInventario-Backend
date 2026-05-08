@@ -12,6 +12,7 @@ using InventorySystem.Infrastructure.Services;
 using InventorySystem.Application.DTOs.Auth;
 using InventorySystem.Application.DTOs.SaleSimulation;
 using System.Text.Json.Serialization;
+using InventorySystem.API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 var key = builder.Configuration["Jwt:Key"]!;
@@ -162,6 +163,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthentication();
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseAuthorization();
 //app.UseHttpsRedirection();
 app.Run();
