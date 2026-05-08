@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InventorySystem.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e175601632b4c1b39e3740e8f07475b5c5bda6e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fbe10c3977edd6d1519991f4269236795b1a55f")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventorySystem.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InventorySystem.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
